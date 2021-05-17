@@ -37,9 +37,9 @@ public class UserDetails {
 	private String User_type;
 
 	@OneToMany(mappedBy="userdetails")
-	private List<Enquiry> enquires;
+	private List<Enquiry> enquires=new ArrayList();
 
 	@OneToMany(mappedBy = "userdetails")
-	private List<Vehicle> vehicles;
+	private List<Vehicle> vehicles=new ArrayList();
 
 }
